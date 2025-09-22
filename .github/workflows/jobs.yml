@@ -1,4 +1,9 @@
+name: jobs
+on: push
 jobs:
-  setup: make setup
-  test: make test
-  linter: make lint
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: make setup
+      - run: make test
+      - run: make lint
