@@ -1,0 +1,5 @@
+jobs:
+  steps:
+    - setup: make setup
+    - test: make test
+    - linter: make lint
